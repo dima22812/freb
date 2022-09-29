@@ -61,7 +61,7 @@ class FreebirMod(loader.Module):
             loader.ConfigValue(
                 "custom_button",
                 [
-                    "💎 Срочно? Жми👇 💎",
+                    "💎 позвать 💎",
                     "https://t.me/FreebieShop777_bot1",
                 ],
                 lambda: self.strings("_cfg_cst_btn"),
@@ -292,7 +292,7 @@ class FreebirMod(loader.Module):
 		self._db.set(__name__, "afk", True)
 		self._db.set(__name__, "gone", time.time())
 		self._db.set(__name__, "ratelimit", [])
-		a_afk_bio_nofb = "В афк."
+		a_afk_bio_nofb = "💎Писать только по делу, остальное ЧС.\n🔗Проекты: @FreebieProject777"
 		lastname = self.strings("lname")
 		if self.config['feedback_bot'] == None:
 			await self._client(UpdateProfileRequest(about=a_afk_bio_nofb, last_name=lastname))
